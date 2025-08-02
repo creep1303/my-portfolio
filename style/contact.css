@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Pompiere&display=swap');
+
+@font-face {
+  font-family: myFont;
+  src: url(headline.ttf);
+}
+
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+/*hyperelink*/
+a{
+   text-decoration: none;
+}
+a:link{
+   color: #033E3E;
+}
+a:visited{
+   color: #033E3E;
+}
+
+body {
+  background: linear-gradient(to right, #d4fcf3, #a1ede1, #6bd4cb, #45abb8);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nova Round', system-ui;
+
+}
+
+/* Navbar */
+.site-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: right;
+  box-shadow: 0 0 10px rgba(176, 239, 255, 0.4);
+}
+
+.nav-bar {
+  display: flex;
+  gap: 30px;
+  margin-right: 50px;
+}
+
+.nav-bar a {
+  font-family: 'Nova Round';
+  font-size: 1.1em;
+  font-weight: bold;
+  color: rgb(176, 239, 255);
+  text-shadow: 0 0 0.3em rgb(176, 239, 255), 0 0 1em rgba(123, 213, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: #033e3e;
+  text-shadow: none;
+}
+
+/* Main layout */
+.main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px 50px;
+  min-height: 100vh;
+}
+
+
+/* Form container glass effect */
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  padding: 40px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Heading & paragraph */
+h1 {
+  font-family: myFont, cursive;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #033e3e;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  color: #045e5e;
+}
+
+/* Input + Textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 15px 20px;
+  border: 2px solid rgba(176, 239, 255, 0.6);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #033e3e;
+  font-size: 1em;
+  font-family: 'Nova Round';
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: inset 0 0 10px rgba(123, 213, 255, 0.3);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(3, 62, 62, 0.5);
+  font-style: italic;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #6bd4cb;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 12px #6bd4cb, inset 0 0 12px #45abb8;
+}
+
+/* Submit Button */
+button {
+  padding: 14px 24px;
+  background: #6bd4cb;
+  color: #033e3e;
+  font-family: 'Nova Round';
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 12px #6bd4cb, 0 0 24px #a1ede1;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #45abb8;
+  box-shadow: 0 0 18px #45abb8, 0 0 30px #6bd4cb;
+  transform: scale(1.05);
+}
+
+/* Back Home Box */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.box a {
+  color: white;
+  font-family: 'Pompiere';
+  font-size: 1.1em;
+}
+
+.box button {
+  background: transparent;
+  border: 2px solid #6bd4cb;
+  color: #6bd4cb;
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.box button:hover {
+  background: #6bd4cb;
+  color: #033e3e;
+}

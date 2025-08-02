@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Pompiere&display=swap');
+
+@font-face {
+   font-family: myFont;
+   src: url(headline.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+/*body*/
+body{
+   background: linear-gradient(to right, #d4fcf3, #a1ede1, #6bd4cb, #45abb8);
+   overflow-x: hidden;
+   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*hyperelink*/
+a{
+   text-decoration: none;
+}
+a:link{
+   color: #033E3E;
+}
+a:visited{
+   color: #033E3E;
+}
+
+/*text*/
+h1{
+  font-family: myFont;
+  font-size: 2.5em;
+  margin: 0;
+}
+h3{
+   font-family: myFont;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+p {
+  font-family: "Nova Round", system-ui;
+  font-size: 1.25em;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.main-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 40px;
+  padding: 10px 50px 50px 50px;
+  padding-top: 80px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+  
+  
+   /*mobile*/
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    padding-top: 80px;
+    height: auto;
+    gap: 20px;
+  }
+
+  img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .nav-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .right-side {
+    max-width: 90%;
+    height: auto;
+    padding-top: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1, h3, p {
+    font-size: 1.2em;
+  }
+
+  .container {
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 1em 2em;
+    font-size: 1em;
+  }
+}
+
+/*header*/
+.site-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: right;
+  box-shadow: 0 0 10px rgba(176, 239, 255, 0.4);
+}
+
+.nav-bar {
+  display: flex;
+  gap: 30px;
+  margin-right: 50px;
+}
+
+.nav-bar a {
+  font-family: 'Nova Round';
+  font-size: 1.1em;
+  font-weight: bold;
+  color: rgb(176, 239, 255);
+  text-shadow: 0 0 0.3em rgb(176, 239, 255), 0 0 1em rgba(123, 213, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: #033e3e;
+  text-shadow: none;
+}
+
