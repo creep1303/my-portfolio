@@ -80,7 +80,7 @@ p {
     margin-left: 0;
   }
   .nav-bar {
-    flex-direction: column;
+    flex-direction: center;
     gap: 10px;
   }
 
@@ -141,4 +141,5 @@ p {
   color: #033e3e;
   text-shadow: none;
 }
+
 
