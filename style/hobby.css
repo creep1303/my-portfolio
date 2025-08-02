@@ -109,7 +109,7 @@ p {
     margin-top: 20px;
   }
   .nav-bar {
-    flex-direction: column;
+    flex-direction: center;
     gap: 10px;
   }
 
@@ -152,4 +152,5 @@ p {
 .nav-bar a:hover {
   color: #033e3e;
   text-shadow: none;
+
 }
